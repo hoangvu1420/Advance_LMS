@@ -1,0 +1,36 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <!--Bacground color-->
+    <Color x:Key="BackgroundColor1">#0B666A</Color>
+    <Color x:Key="BackgroundColor2">#0E2954</Color>
+    <Color x:Key="BackgroundColor3">#35A29F</Color>
+    <Color x:Key="BackgroundColor4">#071952</Color>
+    <Color x:Key="BackgroundColor5">#E4DCCF</Color>
+    <Color x:Key="BackgroundColor6">#041C32</Color>
+    
+
+    <!--Border color-->
+    <Color x:Key="BorderColor1">#35A29F</Color>
+
+    <!--Text color-->
+    <SolidColorBrush x:Key="TextColor1" Color="#FAF3F0" />
+    <SolidColorBrush x:Key="TextColor2" Color="#FC2947" />
+    <SolidColorBrush x:Key="TextColor3" Color="#0C134F" />
+    <SolidColorBrush x:Key="TextColor4" Color="#FF9B9B" />
+
+    <!--Button color-->
+    <SolidColorBrush x:Key="ButtonColor1" Color="#EF6262" />
+    <SolidColorBrush x:Key="ButtonColor2" Color="#0B666A" />
+
+    <!--Color Palette-->
+    <SolidColorBrush x:Key="ColorPalette1" Color="#46C2CB" />
+    <SolidColorBrush x:Key="ColorPalette2" Color="#E80F88" />
+    <SolidColorBrush x:Key="ColorPalette3" Color="#FED049" />
+    <SolidColorBrush x:Key="ColorPalette4" Color="#FF6969" />
+    <SolidColorBrush x:Key="ColorPalette5" Color="#A7727D" />
+    <SolidColorBrush x:Key="ColorPalette6" Color="#5F264A" />
+    <SolidColorBrush x:Key="ColorPalette7" Color="#7AA874" />
+    <SolidColorBrush x:Key="ColorPalette8" Color="#78C1F3" />
+    <SolidColorBrush x:Key="ColorPalette9" Color="#B5F1CC" />
+
+</ResourceDictionary>

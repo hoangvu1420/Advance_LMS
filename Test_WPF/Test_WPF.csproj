@@ -1,0 +1,47 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Images\close %282%29.png" />
+    <None Remove="Images\close %283%29.png" />
+    <None Remove="Images\close %284%29.png" />
+    <None Remove="Images\key.png" />
+    <None Remove="Images\Library.jpg" />
+    <None Remove="Images\LMS.ico" />
+    <None Remove="Images\LMS1.png" />
+    <None Remove="Images\maximize.png" />
+    <None Remove="Images\minimize.png" />
+    <None Remove="Images\R.png" />
+    <None Remove="Images\user.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\close (3).png" />
+    <Resource Include="Images\close (4).png" />
+    <Resource Include="Images\maximize.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="BCrypt.Net-Next" Version="4.0.3" />
+    <PackageReference Include="Expression.Blend.Sdk" Version="1.0.2" />
+    <PackageReference Include="FontAwesome.WPF" Version="4.7.0.9" />
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="5.2.0-preview2.23159.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\key.png" />
+    <Resource Include="Images\Library.jpg" />
+    <Resource Include="Images\LMS.ico" />
+    <Resource Include="Images\LMS1.png" />
+    <Resource Include="Images\minimize.png" />
+    <Resource Include="Images\R.png" />
+    <Resource Include="Images\user.png" />
+  </ItemGroup>
+
+</Project>

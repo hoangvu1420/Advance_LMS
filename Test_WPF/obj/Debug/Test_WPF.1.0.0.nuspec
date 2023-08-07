@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Test_WPF</id>
+    <version>1.0.0</version>
+    <authors>Test_WPF</authors>
+    <description>Package Description</description>
+    <dependencies>
+      <group targetFramework="net6.0-windows7.0">
+        <dependency id="BCrypt.Net-Next" version="4.0.3" exclude="Build,Analyzers" />
+        <dependency id="Expression.Blend.Sdk" version="1.0.2" exclude="Build,Analyzers" />
+        <dependency id="FontAwesome.WPF" version="4.7.0.9" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Data.SqlClient" version="5.2.0-preview2.23159.1" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+    <frameworkReferences>
+      <group targetFramework="net6.0-windows7.0">
+        <frameworkReference name="Microsoft.WindowsDesktop.App.WPF" />
+      </group>
+    </frameworkReferences>
+  </metadata>
+  <files>
+    <file src="C:\Users\FPTSHOP\source\repos\Test_WPF\Test_WPF\bin\Debug\net6.0-windows\Test_WPF.runtimeconfig.json" target="lib\net6.0-windows7.0\Test_WPF.runtimeconfig.json" />
+    <file src="C:\Users\FPTSHOP\source\repos\Test_WPF\Test_WPF\bin\Debug\net6.0-windows\Test_WPF.dll" target="lib\net6.0-windows7.0\Test_WPF.dll" />
+  </files>
+</package>

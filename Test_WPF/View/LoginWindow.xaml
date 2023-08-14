@@ -116,6 +116,7 @@
                             </StackPanel>
                         </Button.Content>
                     </Button>
+                    
                     <Button
                     x:Name="btnMaximize"
                     Grid.Column="2"
@@ -159,6 +160,7 @@
                             </StackPanel>
                         </Button.Content>
                     </Button>
+                    
                     <Button
                     x:Name="btnClose"
                     Grid.Column="3"

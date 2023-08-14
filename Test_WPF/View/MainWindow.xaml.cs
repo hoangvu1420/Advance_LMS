@@ -26,6 +26,7 @@ namespace Test_WPF.View
         {
             InitializeComponent();
             this.MaxHeight = SystemParameters.MaximizedPrimaryScreenHeight;
+            this.MaxWidth = SystemParameters.MaximizedPrimaryScreenWidth;
         }
 
         private void Window_StateChanged(object sender, EventArgs e)
@@ -94,5 +95,7 @@ namespace Test_WPF.View
                 }
             }
         }
+
+
     }
 }

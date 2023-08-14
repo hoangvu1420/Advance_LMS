@@ -123,10 +123,158 @@
                         <GradientStop Color="{StaticResource BackgroundColor4}" Offset="1"/>
                     </LinearGradientBrush>
                 </Border.Background>
-
             </Border>
 
+            <Grid x:Name="nestedGrid" Grid.Column="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <StackPanel x:Name="pnlControlBar"
+                            FlowDirection="RightToLeft"
+                            Orientation="Horizontal"
+                            Grid.Row="0"
+                            Background="Transparent"
+                            MouseLeftButtonDown="pnlControlBar_MouseLeftButtonDown">
+
+                    <Button
+                    x:Name="btnClose"
+                    Grid.Column="3"
+                    Margin="5,0,0,0"
+                    Width="23" 
+                    Height="20"
+                    BorderThickness="0"
+                    Cursor="Hand"
+                    Click="btnClose_Click">
+                        <Button.Style>
+                            <Style TargetType="Button">
+                                <Setter Property="Background" Value="{StaticResource ButtonColor1}"/>
+                                <Style.Triggers>
+                                    <Trigger Property="IsMouseOver" Value="True">
+                                        <Setter Property="Background" Value="#FFCFCFCF"/>
+                                    </Trigger>
+                                </Style.Triggers>
+                            </Style>
+                        </Button.Style>
+                        <Button.Template>
+                            <ControlTemplate TargetType="Button">
+                                <Grid>
+                                    <Border Background="{TemplateBinding Background}"
+                                        CornerRadius="5"/>
+                                    <ContentPresenter HorizontalAlignment="Center"
+                                  VerticalAlignment="Center"/>
+                                </Grid>
+                            </ControlTemplate>
+                        </Button.Template>
+                        <Button.Content>
+                            <StackPanel 
+                            Orientation="Horizontal">
+                                <fa:ImageAwesome 
+                                VerticalAlignment="Top"
+                                HorizontalAlignment="Center"
+                                Width="10" 
+                                Height="10"
+                                Icon="Close"
+                                Foreground="Black"/>
+                            </StackPanel>
+                        </Button.Content>
+                    </Button>
+
+                    <Button
+                    x:Name="btnMaximize"
+                    Grid.Column="2"
+                    Margin="3,0,0,0"
+                    Width="23" 
+                    Height="20"
+                    BorderThickness="0"
+                    Cursor="Hand"
+                    Click="btnMaximize_Click">
+                        <Button.Style>
+                            <Style TargetType="Button">
+                                <Setter Property="Background" Value="{StaticResource ButtonColor1}"/>
+                                <Style.Triggers>
+                                    <Trigger Property="IsMouseOver" Value="True">
+                                        <Setter Property="Background" Value="#FFCFCFCF"/>
+                                    </Trigger>
+                                </Style.Triggers>
+                            </Style>
+                        </Button.Style>
+                        <Button.Template>
+                            <ControlTemplate TargetType="Button">
+                                <Grid>
+                                    <Border Background="{TemplateBinding Background}"
+                                        CornerRadius="5"/>
+                                    <ContentPresenter HorizontalAlignment="Center"
+                                  VerticalAlignment="Center"/>
+                                </Grid>
+                            </ControlTemplate>
+                        </Button.Template>
+                        <Button.Content>
+                            <StackPanel 
+                            Orientation="Horizontal">
+                                <fa:ImageAwesome 
+                                x:Name="btnMaximizeIcon"
+                                VerticalAlignment="Top"
+                                HorizontalAlignment="Center"
+                                Width="12" 
+                                Height="12"
+                                Icon="WindowMaximize"
+                                Foreground="Black"/>
+                            </StackPanel>
+                        </Button.Content>
+                    </Button>
+
+                    <Button
+                    x:Name="btnMinimize" 
+                    Grid.Column="1"
+                    Margin="3,0,0,0"
+                    Width="23" 
+                    Height="20"
+                    BorderThickness="0"
+                    Cursor="Hand"
+                    Click="btnMinimize_Click">
+                        <Button.Style>
+                            <Style TargetType="Button">
+                                <Setter Property="Background" Value="{StaticResource ButtonColor1}"/>
+                                <Style.Triggers>
+                                    <Trigger Property="IsMouseOver" Value="True">
+                                        <Setter Property="Background" Value="#FFCFCFCF"/>
+                                    </Trigger>
+                                </Style.Triggers>
+                            </Style>
+                        </Button.Style>
+                        <Button.Template>
+                            <ControlTemplate TargetType="Button">
+                                <Grid>
+                                    <Border Background="{TemplateBinding Background}"
+                                        CornerRadius="5"/>
+                                    <ContentPresenter HorizontalAlignment="Center"
+                                  VerticalAlignment="Center"/>
+                                </Grid>
+                            </ControlTemplate>
+                        </Button.Template>
+                        <Button.Content>
+                            <StackPanel 
+                            Orientation="Horizontal">
+                                <fa:ImageAwesome 
+                                VerticalAlignment="Top"
+                                HorizontalAlignment="Center"
+                                Width="10" 
+                                Height="10"
+                                Icon="WindowMinimize"
+                                Foreground="Black"/>
+                            </StackPanel>
+                        </Button.Content>
+                    </Button>
+
+                </StackPanel>
+                
+            </Grid>
+            
         </Grid>
+        
     </Border>
 
 </Window>
